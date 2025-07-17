@@ -7,15 +7,17 @@ Original file is located at
     https://colab.research.google.com/drive/1-4_QKKR3Nqbl_C_HSrgWwQBzQ_8gla6D
 """
 
-import gradio as gr
+import numpy as np
 import torch
+from pathlib import Path
 import torch.nn as nn
 import torch.nn.functional as F
-from torchvision import transforms
 from PIL import Image
+from torchvision import transforms
+import gradio as gr
 
-!pip install gradio==3.35.0
-!pip install torchvision
+#!pip install gradio==3.35.0
+#!pip install torchvision
 
 !wget https://github.com/iamsuparvit/thai_digit_recog/raw/refs/heads/main/thai_digit_recog_model.pth
 
